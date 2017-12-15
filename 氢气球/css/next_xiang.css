@@ -1,0 +1,23 @@
+header{
+    width: 100%;
+    height: .40rem;
+    border-bottom: .01rem solid #F5F5F5;
+    text-align: center;
+    line-height: .38rem;
+    font-size: .16rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+header a{
+    float: left;
+    font-weight: 600;
+    padding: 0 .08rem;
+    color: #23BBD1;
+}
+h1{
+    font-weight: 500;
+}

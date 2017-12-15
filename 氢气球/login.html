@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>氢气球旅行</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/demoUtils.js"></script>
+</head>
+<script type="text/javascript">
+    var myScroll;
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+    }
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); },isPassive() ? {
+        capture: false,
+        passive: false
+    } : false);
+</script>
+<body onload="loaded()">
+    <div id="wrapper" style="touch-action: none;">
+        <div id="scroller" style="">
+            <div class="top">
+                <div class="top_tu">
+                    <i class="iconfont icon-gerenzhongxin" ></i>
+                </div>
+                <span>点击登陆</span>
+                <a href="xiaoxi.html"><i class="iconfont icon-xinfeng1"></i></a>
+            </div>
+            <div class="item">
+                <a href="" class="item_lis" >
+                    <div class="left"><i class="iconfont icon-wode_youji_tupian" style="font-size: .24rem;"></i></div>
+                    <div class="right">我的游记</div>
+                </a>
+                <a href="" class="item_lis last">
+                    <div class="left"><i class="iconfont icon-shoucang" style="font-size: .26rem;"></i></div>
+                    <div class="right">我的收藏</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="" class="item_lis" >
+                    <div class="left"><i class="iconfont icon-daohang" style="font-size: .18rem"></i></div>
+                    <div class="right">我的携程订单</div>
+                </a>
+                <a href="" class="item_lis last">
+                    <div class="left"><i class="iconfont icon-qianbao" style="font-size: .2rem"></i></div>
+                    <div class="right">我的携程礼品卡</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="" class="item_lis" >
+                    <div class="left"><i class="iconfont icon-yijian"></i></div>
+                    <div class="right">我的草稿箱</div>
+                </a>
+                <a href="" class="item_lis" >
+                    <div class="left"><i class="iconfont icon-icon_yijianfankui"  style="font-size: .2rem"></i></div>
+                    <div class="right">意见反馈</div>
+                </a>
+                <a href="" class="item_lis last">
+                    <div class="left"><i class="iconfont icon-13"  style="font-size: .24rem"></i></div>
+                    <div class="right">设置</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="item">
+            <a href="index.html">
+                <img src="img/IMG_0907_03.png" alt="">
+                <img src="img/IMG_0906_03.png" alt="" class="img1">
+                <span>首页</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="youji.html">
+                <img src="img/IMG_0906_05.png" alt="">
+                <img src="img/IMG_0907_05.png" alt="" class="img1">
+                <span>游记</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="xingcheng.html">
+                <img src="img/IMG_0906_07.png" alt="">
+                <img src="img/IMG_0908_03.png" alt="" class="img1">
+                <span>行程单</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="login.html" class="active">
+                <img src="img/IMG_0906_09.png" alt="">
+                <img src="img/IMG_0909_03.png" alt="" class="img1">
+                <span>我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+

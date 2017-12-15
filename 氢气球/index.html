@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>氢气球旅行</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/demoUtils.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<script type="text/javascript">
+    var myScroll;
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+    }
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); },isPassive() ? {
+        capture: false,
+        passive: false
+    } : false);
+</script>
+<body onload="loaded()">
+    <div id="header1">
+        <a href="">
+            <i></i>搜索目的地，游记与用户
+        </a>
+    </div>
+    <div id="wrapper" style="touch-action: none;">
+        <div id="scroller" style="">
+            <div class="swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                    <div class="swiper-slide" style="width: 320px; margin-right: 30px;">
+                        <img src="img/banner1.png" alt="">
+                    </div>
+                    <div class="swiper-slide" style="width: 320px; margin-right: 30px;">
+                        <img src="img/banner1.png" alt="">
+                    </div>
+                    <div class="swiper-slide" style="width: 320px; margin-right: 30px;">
+                        <img src="img/banner1.png" alt="">
+                    </div>
+                    <div class="swiper-slide" style="width: 320px; margin-right: 30px;">
+                        <img src="img/banner1.png" alt="">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                </div>
+            </div>
+            <div id="header">
+                <a href="">
+                    <i></i>搜索目的地，游记与用户
+                </a>
+            </div>
+            <div class="zuijin">
+                <div class="span">
+                    <span>最近想去</span>
+                </div>
+                <div class="zui_big_box">
+                    <div class="zui_cheng">上海</div>
+                    <div class="zui_cheng">新西兰</div>
+                    <div class="zui_cheng">马来西亚</div>
+                    <div class="zui_cheng">杭州</div>
+                    <div class="zui_cheng">澳大利亚</div>
+                    <div class="zui_cheng">韩国</div>
+                    <div class="zui_cheng">马来西亚</div>
+                    <div class="zui_cheng">日本</div>
+                </div>
+            </div>
+            <div class="nei">
+                <h3>附件目的地</h3>
+                <div class="nei_da">
+                    <div class="item">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img7"></div>
+                                <h4>龙头沟</h4>
+                                <h6>距离413公里</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img8"></div>
+                                <h4>昌平</h4>
+                                <h6>距离442公里</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img9"></div>
+                                <h4>延安</h4>
+                                <h6>距离445公里</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="more">附件新鲜事</a>
+                </div>
+            </div>
+            <div class="nei">
+                <h3>大陆热门目的地</h3>
+                <div class="nei_da">
+                    <div class="item">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img1"></div>
+                                <h4>云南</h4>
+                                <h6>Yunnan</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img2"></div>
+                                <h4>广东</h4>
+                                <h6>Guangdong</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img3"></div>
+                                <h4>上海</h4>
+                                <h6>Shanghai</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item item1">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img4"></div>
+                                <h4>北京</h4>
+                                <h6>Beijing</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img5"></div>
+                                <h4>厦门</h4>
+                                <h6>Xiamen</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img6"></div>
+                                <h4>四川</h4>
+                                <h6>Sichuan</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="more">20省旅游攻略</a>
+                </div>
+            </div>
+            <div class="nei">
+                <h3>台港澳</h3>
+                <div class="nei_da">
+                    <div class="item">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img10"></div>
+                                <h4>台湾</h4>
+                                <h6>Taiwan</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img11"></div>
+                                <h4>香港</h4>
+                                <h6>Hong Kong</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img12"></div>
+                                <h4>澳门</h4>
+                                <h6>Macau</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nei">
+                <h3>亚洲热门目的地</h3>
+                <div class="nei_da">
+                    <div class="item">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img13"></div>
+                                <h4>日本</h4>
+                                <h6>Janpn</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img14"></div>
+                                <h4>韩国</h4>
+                                <h6>South Korea</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img15"></div>
+                                <h4>泰国</h4>
+                                <h6>Thailand</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item item1">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img16"></div>
+                                <h4>马来西亚</h4>
+                                <h6>Malaysia</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img17"></div>
+                                <h4>新加坡</h4>
+                                <h6>Singapore</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img18"></div>
+                                <h4>越南</h4>
+                                <h6>Vietnam</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="more">12国旅游攻略</a>
+                </div>
+            </div>
+            <div class="nei">
+                <h3>欧洲热门目的地</h3>
+                <div class="nei_da">
+                    <div class="item">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img19"></div>
+                                <h4>法国</h4>
+                                <h6>France</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img20"></div>
+                                <h4>西班牙</h4>
+                                <h6>Spain</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img21"></div>
+                                <h4>意大利</h4>
+                                <h6>Ltaly</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item item1">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img22"></div>
+                                <h4>瑞士</h4>
+                                <h6>Switzerland</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img23"></div>
+                                <h4>英国</h4>
+                                <h6>United Kingdom</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img24"></div>
+                                <h4>德国</h4>
+                                <h6>Germany</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="more">8国旅游攻略</a>
+                </div>
+            </div>
+            <div class="nei">
+                <h3>其他热门目的地</h3>
+                <div class="nei_da">
+                    <div class="item">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img25"></div>
+                                <h4>美国</h4>
+                                <h6>United States</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img26"></div>
+                                <h4>新西兰</h4>
+                                <h6>New Zealand</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img27"></div>
+                                <h4>澳大利亚</h4>
+                                <h6>Australia</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item item1">
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img28"></div>
+                                <h4>墨西哥</h4>
+                                <h6>Mexico</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img29"></div>
+                                <h4>南极</h4>
+                                <h6>Antarctica</h6>
+                            </a>
+                        </div>
+                        <div class="item_lis">
+                            <a href="">
+                                <div class="img img30"></div>
+                                <h4>肯尼亚</h4>
+                                <h6>Kenya</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="item">
+            <a href="index.html" class="active">
+                <img src="img/IMG_0907_03.png" alt="">
+                <img src="img/IMG_0906_03.png" alt="" class="img1">
+                <span>首页</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="youji.html">
+                <img src="img/IMG_0906_05.png" alt="">
+                <img src="img/IMG_0907_05.png" alt="" class="img1">
+                <span>游记</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="xingcheng.html">
+                <img src="img/IMG_0906_07.png" alt="">
+                <img src="img/IMG_0908_03.png" alt="" class="img1">
+                <span>行程单</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="login.html">
+                <img src="img/IMG_0906_09.png" alt="">
+                <img src="img/IMG_0909_03.png" alt="" class="img1">
+                <span>我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+//        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+</script>
